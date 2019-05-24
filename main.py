@@ -1,6 +1,8 @@
 import sys
 
 from PyQt5 import QtWidgets
+
+from recognition_algorithms import algorithm_quality
 from ui import Ui_MainWindow
 
 
@@ -24,7 +26,7 @@ class Main(QtWidgets.QMainWindow):
         )
 
     def show_result(self):
-        self.ui.labelForResult.setText('RESULT')
+        self.ui.labelForResult.setText(algorithm_quality())
 
 
 if __name__ == '__main__':
