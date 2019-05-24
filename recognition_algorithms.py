@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import List, Tuple
 from difflib import SequenceMatcher
-from utils import parse_csv, goto_func
+from utils import parse_csv
 
 
 def euclidean_distance(x1: str, x2: str) -> int:
